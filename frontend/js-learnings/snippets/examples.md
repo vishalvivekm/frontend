@@ -1,6 +1,6 @@
-// examples of printing type of objects by different methods
+// examples of printing type of objects ( typeof operator ) 
 
-const items = ["an apple", 631, 9.3];
+```const items = ["an apple", 631, 9.3];
 items.forEach(e => console.log(typeof e));
 
 console.log(typeof("an apple"));
@@ -17,3 +17,4 @@ const printType = x => console.log(typeof x);
 printType("an apple");
 printType(631);
 printType(9.3);
+```
