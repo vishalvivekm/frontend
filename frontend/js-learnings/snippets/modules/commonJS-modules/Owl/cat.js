@@ -1,0 +1,1 @@
+module.exports.cat = { name: 'Larry', colors: [ 'peach', 'white' ] };

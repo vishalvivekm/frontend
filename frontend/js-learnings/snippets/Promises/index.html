@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p>Promise exampole</p>
+<div id="demo"></div>
+
+<script>
+    function display(some) {
+        document.getElementById("demo").innerHTML = some;
+    }
+
+    const thepromise = new Promise( function (resv, rejc) {
+      let x = 2;
+      if (x == 0) {
+          resv("Success! Yay")
+      }
+      else {
+          rejc(new Error("Failure"));
+      }
+    });
+
+    thepromise.then(
+       function successFun(result){ display(result) },
+        function failureFun(error) {display(error)}
+    );
+
+</script>
+</body>
+</html>
