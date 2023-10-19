@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random</title>
+</head>
+<body>
+
+<script>
+    const requestListener = () => {
+        const responseText = request.responseText;
+        document.body.innerHTML = responseText;
+    }
+        const request = new XMLHttpRequest();
+        request.addEventListener("load", requestListener);
+        request.open("GET", "https://randomuser.me/api/")
+        request.send();
+
+    // function requestListener () {
+    //     console.log(this.responseText);
+    //     //  area.innerHTML = this.responseText;
+    //     document.body.innerHTML = this.responseText;
+    // }
+</script>
+</body>
+</html>
