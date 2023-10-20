@@ -43,7 +43,7 @@ btn.addEventListener('click', () => {
 // btn.addEventListener('click', setTimeout(()=> first.style.color = 'red', 1000));
 // );
 
-//The second code snippet you provided is not correct because it passes the result of the
+//The second code snippet is not correct because it passes the result of the
 // setTimeout function (which is a timer ID) as the second argument to addEventListener ( Event Listener Function).
 // This is not the intended behavior, and it won't work as expected because the setTimeout function will
 // execute immediately when the event listener is added, rather than waiting for the button click event.
