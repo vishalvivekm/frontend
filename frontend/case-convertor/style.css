@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #eeeeee;
+}
+.title {
+    width: 100vw;
+    height: 2rem;
+    background-color: #9eb3ee;
+    font-family: "Bitstream Charter";
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5em 0;
+    color: white;
+}
+textarea {
+    border: 1px dashed;
+    border-radius: 15px;
+padding: 5px;
+    width: 40%;
+    height: 100%;
+    resize: horizontal;
+
+}
+
+textarea {
+    box-shadow: 4px 3px #9eb3ee;
+    margin: 0.5em 1em;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 50vh;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#lower-case, #upper-case, #sentence-case, #proper-case {
+    padding: 5px;
+    margin-top: 10px;
+}
+.title:hover {
+cursor: pointer;
+}
+#save-text-file {
+    height: 35px;
+    border-radius: 40px;
+    margin: 30px 5px;
+
+    margin-left: 1em;
+    padding: 8px;
+
+}
+#save-text-file:hover {
+    fill: aqua;
+}
