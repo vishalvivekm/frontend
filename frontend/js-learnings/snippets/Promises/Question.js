@@ -36,6 +36,15 @@ const checkingText = new Promise(function (resolve, reject) {
     isCorrectText ? resolve("Your text is correct") : reject(new Error("Your text is not correct"));
 });
 function knowTheResult() {
-    checkingText.then(function(result) { console.log(`The result is: ${result}`)});
+    checkingText.then(
+        function(result) {
+            console.log(`The result is: ${result}`)
+            return result;
+        },
+        function (error) {
+            console.log("error")
+        return error;
+        }
+    );
 }
 knowTheResult();
