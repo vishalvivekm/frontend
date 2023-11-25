@@ -1,4 +1,8 @@
-// async function myFunc() {
+//
+async and await keywords allow us to create asynchronous functions that always return a Promise, w/o having to explicitly create a new Promise and ending up with Promises chaining. 
+
+
+ async function myFunc() {
 //     return "Hello, Async!";
 // }
 //
@@ -33,3 +37,25 @@ async function fetchFunction() {
     }
 }
 fetchFunction();
+
+
+// Theories and questions:
+/*  1.purpose of the then method in async and await?: to access the resolved values of a promise 
+
+
+*/
+
+/*
+async function evenOrOdd(number) {
+  let promise = new Promise((resolve, reject) => {
+    if (number % 2 === 0) {
+      setTimeout(() => resolve('The number is even'), 2000);
+    } else {
+      setTimeout(() => reject('The number is odd'), 2000);
+    }
+  });
+
+  const result = await promise 
+  console.log(result);
+}
+*/

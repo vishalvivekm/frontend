@@ -3,51 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Random</title>
+    <link rel="stylesheet" href="./style.css">
+<style>
+</style>
 </head>
 <body>
-<h1>Random User Generator</h1>
-
+<h1 class="main-header">Random User Generator</h1>
+<hr style="width:55%; margin: 40px auto;">
+<button id="get-user-button" onclick="sendReq()">Get user</button>
+<button id="save-users-button">Save users</button>
 <h2></h2>
-<script>
-    const body = document.body;
-    const requestListener = () => {
-        const responseText = JSON.parse(request.responseText);
-        console.log(typeof responseText
-        );
-        display(responseText);
-    }
-    function display(responseText) {
-        const Div = document.createElement('div');
-        const {title, first, last} = responseText.results[0].name;
-        const fullName = `${title} ${first} ${last}`;
-        const dob = responseText.results[0].dob.date;
-        const date = dob.split("-");
-        const imageURL = responseText.results[0].picture.large;
-        console.log(imageURL)
-        Div.innerHTML += `<h2 class='name'> ${fullName} </h2>
-                          <p class="email">Email: ${responseText.results[0].email}</p>
-                          <p class="password">Password: ${responseText.results[0].login.password}</p>
-                          <p class="location">Location: ${responseText.results[0].location.city}, ${responseText.results[0].location.country} </p>
-                          <p class="gender">Gender: ${responseText.results[0].gender} </p>
-                          <p class="phone">Phone: ${responseText.results[0].phone} </p>
-                          <p class="birthday">Birthday: ${date[2].substring(0, 2)}/${date[1]}/${date[0]}</p>
-                          <img src="${imageURL}" alt="image"/>
-        `
+<script src="script.js">
 
-
-        body.append(Div);
-    }
-        const request = new XMLHttpRequest();
-        request.addEventListener("load", requestListener);
-        request.open("GET", "https://randomuser.me/api/")
-        request.send();
-
-    // function requestListener () {
-    //     console.log(this.responseText);
-    //     //  area.innerHTML = this.responseText;
-    //     document.body.innerHTML = this.responseText;
-    // }
-    
 </script>
 </body>
 </html>
