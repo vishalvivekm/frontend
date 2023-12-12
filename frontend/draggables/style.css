@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-color: #fff;
+}
+.container {
+    background-color: #333;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.draggable {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    cursor: move;
+
+}
+.draggable.dragging {
+    opacity: .5;
+
+}
+.heading {
+    margin: 20px 0;
+    font-family: OpenSymbol;
+    font-size: 1.5rem;
+    display: inline-block;
+    opacity: .5;
+    font-weight: bold;
+    padding: 15px;
+    border: 3px transparent;
+    border-radius: 5%;
+    box-shadow: 0px 10px 100px 1px currentColor;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
