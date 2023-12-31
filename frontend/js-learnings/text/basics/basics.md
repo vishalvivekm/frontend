@@ -8,7 +8,7 @@ var  myFirstName;
 3. const : read only
 variable assigned using const are constant value which cant
 be reassigned or redeclared
-let can be reassigned but not reassigned
+let can be reassigned but not redeclared.
 var can be reassigned and redeclared.
 
 4. Devs use uppercase variable identifiers - immutable values lowercase/camelCase - mutable values (objects and arrays)
@@ -36,7 +36,7 @@ Nth - to - Last character in a String = [StringName.length-N]
 
                             STARTING OUT with JS Arrays.
 const myArray = ["Vivek Vishal", 2140124]; 1-D
-onst myArray = [["vivek",24],["adarsh", 25]]; 2-D arrays
+const myArray = [["vivek",24],["adarsh", 25]]; 2-D arrays
 Unlike strings, the entries of arrays are mutable and can be changed freely, even if the array was declared with const i,e,
 const ourArray = [50, 40, 30];
 ourArray[0] = 15;          // no spaces in arrayname and sq brcts
@@ -71,7 +71,7 @@ ourArray // ["J", ["cat"]]
 
 * unshift method // add elements in front of the array works just like push except that it adds ele at the begining of array.
  const ourArray = ["Stimpson", "J", "cat"];
-ourArray.shift(); // resuylt array : ["J", "cat"]
+ourArray.shift(); // result array : ["J", "cat"]
 ourArray.unshift("Happy"); //  ["Happy", "J", "cat"];
 
 *function // reusable Entities

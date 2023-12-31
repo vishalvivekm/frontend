@@ -1,8 +1,12 @@
-//
-async and await keywords allow us to create asynchronous functions that always return a Promise, w/o having to explicitly create a new Promise and ending up with Promises chaining. 
+// async and await keywords allow us to create asynchronous functions that always
+// return a Promise, w/o having to explicitly create a new Promise and
+// ending up with Promises chaining.
 
+//"async and await make promises easier to write"
+// async makes a function return a Promise
+// await makes a function wait for a Promise
 
- async function myFunc() {
+// async function myFunc() {
 //     return "Hello, Async!";
 // }
 //
@@ -59,3 +63,7 @@ async function evenOrOdd(number) {
   console.log(result);
 }
 */
+
+// await keyword - It waits for a promise to resolve before moving on to the next line of code.
+// async keyword can be used to convert a function to an asynchronous function which will return a promise object
+// we can use await inside a function which has asynce keyword in its signature that is async function() ...

@@ -6,13 +6,15 @@
 // cb: mandatory arg,
 // reduce( callback(accumulator, currentValue, CurrentIndex(Optional), array(optional), initialvalue)
 /* if no initialvalue is given : the accumulator starts from array[0] and the callback starts from array[1]
-   if an initialvalue is given, then the accumulator starts from initialvalue and execution starts with the array[1]
+   if an initialvalue is given, then the accumulator starts from initialvalue and execution starts with the array[0]
 *
 * */
 
 const arr = [1,2,3,4,5];
 
 const  addition= arr.reduce((sum, number)=> {
+console.log(sum)
+    // console.log(sum+number);
           return sum+number;
 }, )
 console.log(addition)
@@ -25,10 +27,10 @@ const avg = arr.reduce((sum, number, currentIndex, arr)=> {
        return sum;
    }
 })
-console.log(avg)
+// console.log(avg)
 
 const  addition1= arr.reduce((sum, number)=> {
     return sum+number;
 },20 );
 
-console.log(addition1); // expected 35
+// console.log(addition1); // expected 35
