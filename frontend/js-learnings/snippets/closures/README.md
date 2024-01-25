@@ -1,29 +1,23 @@
 <details>
 <summary>more on Closures </summary>
-```
-function greeting(name) {
+<code>function greeting(name) {
     const text = "Hello, " + name;
-
     return function() {
         console.log(text);
     }
 }
-
-
-
 const greetingVivek = greeting("Vivek");
-
 greetingVivek(); // output: "Hello, Vivek"
-
-console.log(text) // ReferenceError: text is not defined
-
-```
-
+console.log(text) // ReferenceError: text is not defined</code>
+<br>
+<details><summary>Text: </summary>
 > The function definition is the same. What is different is that the function creates a variable text, which is accessed by the inner anonymous function. In the end, we return the anonymous function.
 
 > In this example, the inner anonymous function uses a variable outside of its scope. Nothing unusual here because the access is granted by the scoping rules in JavaScript. What we're interested in is the fact that this variable can be used even after we ran the outer function greeting(), but not accessed directly (via calling console.log).
 
 > The inner function maintains the reference to its lexical environment, and our variable exists within it. For that reason, when we call greeting("Vivek"), our variable text is still available to use, and it passes "Hello, Vivek" to console.log. That is closure, the inner function "encloses" the data in its environment and has access to it even after that data isn't available within that scope. Notice that we can't access the variable directly. It means that the variable is private to our inner function, and we can only access this variable through it.
+</details>
+
 
 
 Qn1: "What we're interested in is the fact that this variable can be used even after we ran the outer function greeting(), but not accessed directly (via calling console.log)." and " That is closure, the inner function "encloses" the data in its environment and has access to it even after that data isn't available within that scope. " 
