@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Accordians</title>
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <h2>Questions</h2>
+
+            <div class="tags">
+                <p class="questions">Which Grade are you in ?</p>
+                <div class="icon" onclick="toggleVisibility(this)">+</div>
+                <p class="answer" style="display: none;">None</p>
+            </div>
+            <div class="tags">
+                <p class="questions">Where do you live ? </p>
+                <div class="icon" onclick="toggleVisibility(this)">+</div>
+                <p class="answer" style="display: none;">Answer: Mars</p>
+            </div>
+            <div class="tags">
+                <p class="questions">How was the exam today?</p>
+                <div class="icon" onclick="toggleVisibility(this)">+</div>
+                <p class="answer" style="display: none;">Fantastic</p>
+            </div>
+            <div class="tags">
+                <p class="questions">Where are you interning this summer ? </p>
+                <div class="icon" onclick="toggleVisibility(this)">+</div>
+                <p class="answer" style="display: none;">Nowhere</p>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
