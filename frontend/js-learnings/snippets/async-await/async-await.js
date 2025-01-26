@@ -10,7 +10,7 @@
 //     return "Hello, Async!";
 // }
 //
-// console.log(myFunc()); // Promise { 'Hello, Async!' }
+// console.log(myFunc()); // Promise { <state>: "fulfilled", <value>: "Hello, Async!" }
 // myFunc()
 //     .then(function (response) {
 //         console.log(response);
