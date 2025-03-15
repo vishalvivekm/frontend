@@ -6,7 +6,7 @@ const initialPerson = {
   city: "",
   email: "",
 };
-const inputElements = ["name", "email", "city", "age"];
+const inputElements = Object.keys(initialPerson);
 
 const personReducer = (state, action) => {
   switch (action.type) {
